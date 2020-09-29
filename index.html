@@ -4,108 +4,238 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Table dengan CSS</title>
+  <title>Form Pendaftaran</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <table class="container">
-    <tr>
-      <td>
-        <h1>
-          <img src="title.png" alt="App Logo">
-        </h1>
-      </td>
-      <td>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Contact US</li>
-            <li>About</li>
-          </ul>
-        </nav>
-      </td>
-    </tr>
-    <tr class="main">
-      <td>
-        <div class="content"></div>
-        <h5>Name</h5>
-        <h5>Vocalists</h5>
-        <h5>Producers</h5>
-        <h5>Other Artists</h5>
-        <h5>Type</h5>
-        <h5>Duration</h5>
-        <h5>Albums</h5>
-        <h5>Tags</h5>
-        <h5>Original Media</h5>
-        <h5>Alternate versions</h5>
-        <h5>Statistics</h5>
-        <h5>Published</h5>
-        <h5>Addition date</h5>
-      </td>
-      <td>
-        <div class="content">
-          <h4>Allgather <span class="muted"> Soh Yoshioka feat. 初音ミク Append (Dark) (Original song)</span></h4>
-          <video src="【初音ミク - Hatsune Miku Append】Allgather【Original】.MP4" controls></video>
-        </div>
-        <p>Allgather</p>
-        <p>
-          <a target="_blank" href="https://www.google.com/search?q=初音ミク Append (Dark)">初音ミク Append (Dark)</a>
-        </p>
-        <p>Soh Yoshioka</p>
-        <p>	
-          <a target="_blank" href="https://www.google.com/search?q=ちばけんいち">ちばけんいち</a> (Mastering), 
-          <a target="_blank" href="https://www.google.com/search?q=つのつき">つのつき</a> (Illustrator)
-        </p>
-        <p>Original song</p>
-        <p>5:31</p>
-        <p>
-          EXIT TUNES PRESENTS Entrance Dream Music 3 <small>(2016)</small>, Hi+#er+0 and #ere@|=+er <small>(2016)</small>
-        </p>
-        <p>
-          <a href="#">complextro</a> <small>(3)</small>
-          <a href="#">electro-house</a> <small>(3)</small>
-          <a href="#">house</a> <small>(2)</small>
-          <a href="#">free</a> <small>(1)</small>
-        </p>
-        <p>Allgather	(5:34) PV / ブラザーP feat. 初音ミク Append (Dark)</p>
-        <p>6 favorite(s), 24 like(s), 1210 hit(s), 66 total score.</p>
-        <p>5/7/2013</p>
-        <p>5/7/2013 9:24:41 PM</p>
-        <section>
-          <div class="box">
-            <small>Youtube 【初音ミク - Hatsune Miku Append】Allgather【Original】</small>
-          </div>
-          <div class="box">
-            <small>NicoNicoDouga 【初音ミク】 Allgather 【オリジナル】</small>
-          </div>
-        </section>
-      </td>
-    </tr>
-    <tr>
-      <td><br></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        <p>&copy;2020 All Right Reserved.</p>
-        <p>Created By Bagus Fahrudin - Table as Layout</p>
-      </td>
-      <td>
+  <form name="form" method="POST">
+    <nav>
+      <div class="navbar-wrapper container">
+        <span class="site-title">Formulir Pendaftaran</span>
         <div>
-          <img src="mikufan_small.png" alt="mikufan_small">
-          <img src="mikupa_ru.jpg" alt="mikupa_ru">
-          <img src="pjd-wiki_small.png" alt="pjd-wiki_small">
-          <img src="rvocaloid_small2.png" alt="rvocaloid_small2">
-          <img src="touhoudb_small.png" alt="touhoudb_small">
-          <img src="utaitedb_small.png" alt="utaitedb_small">
-          <img src="vnn.png" alt="vnn">
-          <img src="vocaeuro.jpg" alt="vocaeuro">
-          <img src="vocallective_small.png" alt="vocallective_small">
+          <button type="submit" class="btn">Tampil</button>
+          <button type="reset" style="display: none;" class="btn">Bersih</button>
         </div>
-      </td>
-    </tr>
-  </table>
-</body>
+      </div>
+    </nav>
 
+    <main class="container" id="formulir">
+      <section>
+        <h6 class="title">Biodata Pasien</h6>
+        <div class="content">
+          <div class="form-inline">
+            <legend>Nomor KK</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 25%;">
+                <input type="text" name="nokk" id="nokk" placeholder="Nomor Kartu Keluarga">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>NIK</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 25%;">
+                <input type="text" name="nik" id="nik" placeholder="Nomor Induk Keluarga">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Nama Lengkap</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <input type="text" name="nama_lengkap" id="nama_lengkap" placeholder="Nama Lengkap">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Jenis Kelamin</legend>
+            <div class="form-control">
+              <div class="form-control-radio">
+                <input type="radio" name="jk" id="jk-l" value="Laki-laki">
+                <label for="jk-l">Laki-laki</label>
+                <input type="radio" name="jk" id="jk-p" value="Perempuan">
+                <label for="jk-p">Perempuan</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Tempat Lahir</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="tempat_lahir" id="tempat_lahir" placeholder="Tempat Lahir">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Tanggal Lahir</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="date" name="tanggal_lahir" id="tanggal_lahir" placeholder="Tanggal Lahir">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>No. Telp</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="no_telp" id="no_telp" placeholder="Nomor Telepon">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>No. HP</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="no_hp" id="no_hp" placeholder="Nomor HP">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Alamat</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <textarea name="alamat" id="alamat" style="height: 6rem;"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Jenis Pasien</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <select name="jenis_pasien" id="jenis_pasien">
+                  <option value="">Pilih Jenis Pasien</option>
+                  <option>Pasien Umum</option>
+                  <option>Pasien Segera Ditolong / Pasien Gawat Darurat</option>
+                  <option>Pasien Baru</option>
+                  <option>Pasien Lama</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section>
+        <h6 class="title">Wali / Keluarga Pasien</h6>
+        <div class="content">
+          <div class="form-inline">
+            <legend>Nomor KK</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 25%;">
+                <input type="text" name="nokk_keluarga" id="nokk_keluarga" placeholder="Nomor Kartu Keluarga">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>NIK</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 25%;">
+                <input type="text" name="nik_keluarga" id="nik_keluarga" placeholder="Nomor Induk Keluarga">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Nama Lengkap</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <input type="text" name="nama_lengkap_keluarga" id="nama_lengkap_keluarga" placeholder="Nama Lengkap">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Jenis Kelamin</legend>
+            <div class="form-control">
+              <div class="form-control-radio">
+                <input type="radio" name="jk_keluarga" id="jk-l" value="Laki-laki">
+                <label for="jk-l">Laki-laki</label>
+                <input type="radio" name="jk_keluarga" id="jk-p" value="Perempuan">
+                <label for="jk-p">Perempuan</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Tempat Lahir</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="tempat_lahir_keluarga" id="tempat_lahir_keluarga" placeholder="Tempat Lahir">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Tanggal Lahir</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="date" name="tanggal_lahir_keluarga" id="tanggal_lahir_keluarga" placeholder="Tanggal Lahir">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>No. Telp</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="no_telp_keluarga" id="no_telp_keluarga" placeholder="Nomor Telepon">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>No. HP</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="no_hp_keluarga" id="no_hp_keluarga" placeholder="Nomor HP">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Alamat</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <textarea name="alamat_keluarga" id="alamat_keluarga" style="height: 6rem;"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Hubungan</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <input type="text" name="hubungan_keluarga" id="hubungan_keluarga" placeholder="Hubungan dengan Pasien">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section>
+        <h6 class="title">Catatan Khusus</h6>
+        <div class="content">
+          <div class="form-inline">
+            <legend>Kebutuhan Lain</legend>
+            <div class="form-control">
+              <div class="form-control-radio">
+                <input type="checkbox" name="kl" id="kh-a" value="Kurang Mampu">
+                <label for="kh-a">Kurang Mampu</label>
+                <input type="checkbox" name="kl" id="kh-b" value="Memiliki BPJS">
+                <label for="kh-b">Memiliki BPJS</label>
+                <input type="checkbox" name="kl" id="kh-c" value="Penyandang Disabilitas">
+                <label for="kh-c">Penyandang Disabilitas</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Catatan</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <textarea name="catatan" id="catatan" style="height: 6rem;"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+    </main>
+
+    <main class="container" id="tampilan"></main>
+
+  </form>
+</body>
+<script src="script.js"></script>
 </html>
