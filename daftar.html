@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran</title>
+  <link rel="stylesheet" href="daftar.css">
+</head>
+
+<body>
+  <form name="form" method="POST">
+    <nav>
+      <div class="navbar-wrapper container">
+        <span class="site-title">Formulir Pendaftaran</span>
+        <div>
+          <button type="submit" class="btn">Tampil</button>
+          <button type="reset" style="display: none;" class="btn">Bersih</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container" id="formulir">
+      <section>
+        <h6 class="title">Biodata Pasien</h6>
+        <div class="content">
+          <div class="form-inline">
+            <legend>Nomor KK</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 25%;">
+                <input type="text" name="nokk" id="nokk" placeholder="Nomor Kartu Keluarga">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>NIK</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 25%;">
+                <input type="text" name="nik" id="nik" placeholder="Nomor Induk Keluarga">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Nama Lengkap</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <input type="text" name="nama_lengkap" id="nama_lengkap" placeholder="Nama Lengkap">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Jenis Kelamin</legend>
+            <div class="form-control">
+              <div class="form-control-radio">
+                <input type="radio" name="jk" id="jk-l" value="Laki-laki">
+                <label for="jk-l">Laki-laki</label>
+                <input type="radio" name="jk" id="jk-p" value="Perempuan">
+                <label for="jk-p">Perempuan</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Tempat Lahir</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="tempat_lahir" id="tempat_lahir" placeholder="Tempat Lahir">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Tanggal Lahir</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="date" name="tanggal_lahir" id="tanggal_lahir" placeholder="Tanggal Lahir">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>No. Telp</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="no_telp" id="no_telp" placeholder="Nomor Telepon">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>No. HP</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="no_hp" id="no_hp" placeholder="Nomor HP">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Alamat</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <textarea name="alamat" id="alamat" style="height: 6rem;"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Jenis Pasien</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <select name="jenis_pasien" id="jenis_pasien">
+                  <option value="">Pilih Jenis Pasien</option>
+                  <option>Pasien Umum</option>
+                  <option>Pasien Segera Ditolong / Pasien Gawat Darurat</option>
+                  <option>Pasien Baru</option>
+                  <option>Pasien Lama</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h6 class="title">Wali / Keluarga Pasien</h6>
+        <div class="content">
+          <div class="form-inline">
+            <legend>Nomor KK</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 25%;">
+                <input type="text" name="nokk_keluarga" id="nokk_keluarga" placeholder="Nomor Kartu Keluarga">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>NIK</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 25%;">
+                <input type="text" name="nik_keluarga" id="nik_keluarga" placeholder="Nomor Induk Keluarga">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Nama Lengkap</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <input type="text" name="nama_lengkap_keluarga" id="nama_lengkap_keluarga" placeholder="Nama Lengkap">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Jenis Kelamin</legend>
+            <div class="form-control">
+              <div class="form-control-radio">
+                <input type="radio" name="jk_keluarga" id="jk-l" value="Laki-laki">
+                <label for="jk-l">Laki-laki</label>
+                <input type="radio" name="jk_keluarga" id="jk-p" value="Perempuan">
+                <label for="jk-p">Perempuan</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Tempat Lahir</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="tempat_lahir_keluarga" id="tempat_lahir_keluarga" placeholder="Tempat Lahir">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Tanggal Lahir</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="date" name="tanggal_lahir_keluarga" id="tanggal_lahir_keluarga"
+                  placeholder="Tanggal Lahir">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>No. Telp</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="no_telp_keluarga" id="no_telp_keluarga" placeholder="Nomor Telepon">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>No. HP</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 34%;">
+                <input type="text" name="no_hp_keluarga" id="no_hp_keluarga" placeholder="Nomor HP">
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Alamat</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <textarea name="alamat_keluarga" id="alamat_keluarga" style="height: 6rem;"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Hubungan</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <input type="text" name="hubungan_keluarga" id="hubungan_keluarga" placeholder="Hubungan dengan Pasien">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h6 class="title">Catatan Khusus</h6>
+        <div class="content">
+          <div class="form-inline">
+            <legend>Kebutuhan Lain</legend>
+            <div class="form-control">
+              <div class="form-control-radio">
+                <input type="checkbox" name="kl" id="kh-a" value="Kurang Mampu">
+                <label for="kh-a">Kurang Mampu</label>
+                <input type="checkbox" name="kl" id="kh-b" value="Memiliki BPJS">
+                <label for="kh-b">Memiliki BPJS</label>
+                <input type="checkbox" name="kl" id="kh-c" value="Penyandang Disabilitas">
+                <label for="kh-c">Penyandang Disabilitas</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-inline">
+            <legend>Catatan</legend>
+            <div class="form-control">
+              <div class="wrapper" style="width: 50%;">
+                <textarea name="catatan" id="catatan" style="height: 6rem;"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main class="container" id="tampilan"></main>
+
+  </form>
+</body>
+<script src="script.js"></script>
+
+</html>
